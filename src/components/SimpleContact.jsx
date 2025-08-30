@@ -22,7 +22,7 @@ export const SimpleContactSection = () => {
             target="_blank"
           >
             <img
-              src="../public/assets/discordLogo.jpg"
+              src="/assets/discordLogo.jpg"
               alt="discordLogo"
               className="w-7 h-7"
             />
