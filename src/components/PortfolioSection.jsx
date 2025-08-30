@@ -22,7 +22,7 @@ export const PortfolioSection = () => {
     }
   };
   return (
-    <section>
+    <section id="hero">
       {showPopup && (
         <div className="fixed inset-0 flex items-center justify-center bg-primary/50 z-50">
           <div className="bg-card p-6 rounded-lg shadow-lg max-w-sm w-full relative">

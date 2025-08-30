@@ -3,6 +3,7 @@ import { useState } from "react";
 import { ThemeToggle } from "../components/ThemeToggle";
 import { Header } from "../components/Header";
 import { PortfolioSection } from "../components/PortfolioSection";
+import { Footer } from "../components/Footer";
 
 export const PortfolioWebsite = () => {
   return (
@@ -11,6 +12,7 @@ export const PortfolioWebsite = () => {
       <Header page={"Portfolio Website"} />
       {/* Title and Main Stay Header With Image */}
       <PortfolioSection />
+      <Footer />
     </div>
   );
 };
