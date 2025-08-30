@@ -7,7 +7,7 @@ const projects = [
     title: "ThermoFlux",
     description:
       "A short 3 minute game developed in Unity with 3D Platforming. I co-managed the C# programming along with another developer.",
-    image: "/projects/project1.png",
+    image: "/projects/project1.jpg",
     tags: ["Unity", "C#", "Game Development"],
     projectPage: "/ThermoFlux",
     demoUrl: "https://rangerhalt.itch.io/thermoflux",
