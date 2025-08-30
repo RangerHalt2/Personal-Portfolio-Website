@@ -43,7 +43,7 @@ export const ZeroSSection = () => {
         <div className="grid grid-cols-1 items-center md:grid-cols-2">
           <div className="flex justify-center">
             <img
-              src="../public/projects/project2.png"
+              src="/projects/project2.png"
               alt="Dragon Block C - Zero S Logo"
               className="w-75 h-75 md:w-185 md:h-185 mt-6 items-center"
             />

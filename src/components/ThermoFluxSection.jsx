@@ -9,7 +9,7 @@ export const ThermoFluxSection = () => {
       <div className="grid grid-cols-1 items-center md:grid-cols-2">
         <div className="flex justify-center">
           <img
-            src="../public/projects/project1.jpg"
+            src="/projects/project1.jpg"
             alt="ThermoFlux Banner and Logo"
             className="w-75 h-100 md:w-144.75 md:h-193 mt-6 items-center"
           />

@@ -43,7 +43,7 @@ export const PortfolioSection = () => {
         <div className="grid grid-cols-1 items-center md:grid-cols-2">
           <div className="flex justify-center border-primary border-1 p-6 mt-6 ml-6">
             <img
-              src="../public/projects/project3.png"
+              src="/projects/project3.png"
               alt="An image of this website's landing page"
               className="w-auto h-auto md:w-auto md:h-auto mt-6 items-center"
             />
