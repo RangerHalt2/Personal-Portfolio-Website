@@ -88,7 +88,7 @@ export const ZeroSSection = () => {
               <div className="mt-6 items-left col-span-4 p-6 md:p-0">
                 <iframe
                   className="relative flex w-90 h-120 md:w-150 md:h-110"
-                  src="https://www.youtube.com/embed/leUnJkccp0k?si=2_C5xRy5jggS9D8F"
+                  src="https://www.youtube.com/embed/dK6dSgAVPnQ?si=m_vtsshfrSm3tti1"
                   title="ThermoFlux Gameplay Trailer"
                   allow="accelerometer; autoplay; clipboard-write; encrytped-media; gyroscope; picture-in-picture"
                   allowFullScreen
