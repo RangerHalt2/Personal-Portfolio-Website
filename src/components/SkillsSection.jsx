@@ -19,9 +19,16 @@ const skills = [
   //Tools
   { name: "Visual Studio Code", level: 80, category: "tools" },
   { name: "Git/GitHub", level: 75, category: "tools" },
+
+  //Game Development
+  { name: "Scripting", level: 90, category: "game development" },
+  { name: "Unity", level: 90, category: "game development" },
+  { name: "Unreal Engine", level: 75, category: "game development" },
+  { name: "UI/UX Design", level: 50, category: "game development" },
+  { name: "Level Design", level: 45, category: "game development" },
 ];
 
-const categories = ["all", "frontend", "backend", "tools"];
+const categories = ["all", "frontend", "backend", "tools", "game development"];
 
 export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -68,11 +75,17 @@ export const SkillsSection = () => {
                   style={{ width: skills.level + "%" }}
                 />
               </div>
-
-              <div className="text-right mt-1">
-                <span className="text-sm text-muted-foreground">
-                  {skills.level}%
-                </span>
+              <div className="grid grid-cols2">
+                <div className="text-right mt-1">
+                  <span className="text-sm text-muted-foreground">
+                    {skills.level}%
+                  </span>
+                </div>
+                <div className="absolute text-left">
+                  <span className="text-sm text-muted-foreground">
+                    {skills.category}
+                  </span>
+                </div>
               </div>
             </div>
           ))}
