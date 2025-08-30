@@ -31,7 +31,7 @@ const projects = [
       "This website that you're currently on viewing all about me... was in fact developed by me!",
     image: "/projects/project3.png",
     tags: ["Web Development", "React", "JavaScript"],
-    projectPage: "#",
+    projectPage: "/Portfolio",
     demoUrl: "#",
     githubUrl: "/",
   },
