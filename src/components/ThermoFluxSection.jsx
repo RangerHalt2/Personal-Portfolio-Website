@@ -51,7 +51,7 @@ export const ThermoFluxSection = () => {
                 <div className="pb-[56.25%] h-120 md:h-0 overflow-hidden ">
                   <iframe
                     className="relative flex w-90 h-120 md:w-150 md:h-110"
-                    src="https://www.youtube.com/embed/leUnJkccp0k?si=2_C5xRy5jggS9D8F"
+                    src="https://www.youtube.com/embed/sFRtVhFXYMQ?si=VJsA8Sk3nJrmIUh0"
                     title="ThermoFlux Gameplay Trailer"
                     allow="accelerometer; autoplay; clipboard-write; encrytped-media; gyroscope; picture-in-picture"
                     allowFullScreen

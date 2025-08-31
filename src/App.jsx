@@ -5,6 +5,7 @@ import { NotFound } from "./pages/NotFound";
 import { Toaster } from "@/components/ui/toaster";
 import { ZeroS } from "./pages/ZeroS";
 import { PortfolioWebsite } from "./pages/PortfolioWebsite";
+import { CodeExamples } from "./pages/CodeExamples";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/ThermoFlux" element={<ThermoFlux />} />
           <Route path="/ZeroS" element={<ZeroS />} />
           <Route path="/Portfolio" element={<PortfolioWebsite />} />
+          <Route path="/Code" element={<CodeExamples />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
