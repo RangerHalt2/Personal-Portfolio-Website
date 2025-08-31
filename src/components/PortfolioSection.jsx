@@ -74,7 +74,10 @@ export const PortfolioSection = () => {
             <div className="relative flex justify-center items-center">
               <div className="grid grid-cols-2 place-items-center w-auto h-auto md:items-left md:w-35 md:h-35 mt-6">
                 <div onClick={handleClick}>
-                  <a href="#" target="_blank">
+                  <a
+                    href="https://github.com/RangerHalt2/Personal-Portfolio-Website"
+                    target="_blank"
+                  >
                     <Github size={50} className="text-primary" />
                   </a>
                 </div>
