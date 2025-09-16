@@ -144,7 +144,7 @@ export const ProjectsSection = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-2 text-center gap-2 mt-12">
+        <div className="text-center gap-2 mt-12">
           <a
             className="cosmic-button w-fit flex items-center mx-auto"
             href="https://github.com/RangerHalt2"
@@ -152,13 +152,6 @@ export const ProjectsSection = () => {
           >
             Check My GitHub{" "}
             <ArrowRight size={20} className="w-5 h-5 md:w-5 md:h-5" />
-          </a>
-          <a
-            href="/Code"
-            className="cosmic-button w-fit flex items-center mx-auto"
-          >
-            Check out my Code Here{" "}
-            <ArrowRight size={20} className="w-7 h-7 md:w-5 md:h-5" />
           </a>
         </div>
       </div>
