@@ -36,7 +36,7 @@ export const AboutSection = () => {
                 Get In Touch With Me
               </a>
               <a
-                href="../../public/files/Baysinger_Logan_Resume.pdf"
+                href="/files/Baysinger_Logan_Resume.pdf"
                 download={"Baysinger_Logan_Resume.pdf"}
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
