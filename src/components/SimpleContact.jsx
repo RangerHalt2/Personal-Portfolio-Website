@@ -1,4 +1,4 @@
-import { Linkedin } from "lucide-react";
+import { Linkedin, Mail } from "lucide-react";
 
 export const SimpleContactSection = () => {
   return (
@@ -26,6 +26,9 @@ export const SimpleContactSection = () => {
               alt="discordLogo"
               className="w-7 h-7"
             />
+          </a>
+          <a href="mailto:loganbaysinger@gmail.com">
+            <Mail />
           </a>
         </div>
       </div>
