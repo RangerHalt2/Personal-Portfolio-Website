@@ -6,6 +6,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { ZeroS } from "./pages/ZeroS";
 import { PortfolioWebsite } from "./pages/PortfolioWebsite";
 import { CodeExamples } from "./pages/CodeExamples";
+import { AnythingButAGun } from "./pages/ABAG";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/ZeroS" element={<ZeroS />} />
           <Route path="/Portfolio" element={<PortfolioWebsite />} />
           <Route path="/Code" element={<CodeExamples />} />
+          <Route path="/ABAG" element={<AnythingButAGun />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

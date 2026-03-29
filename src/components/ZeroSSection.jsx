@@ -6,7 +6,6 @@ export const ZeroSSection = () => {
   const [popUpMessage, setPopupMessage] = useState(
     "This Organization's Repositories are private, but I can share my code on request"
   );
-
   const handleClick = (e) => {
     const target = e.target.closest("a");
     if (!target) return;

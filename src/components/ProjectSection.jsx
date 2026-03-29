@@ -3,6 +3,16 @@ import { useState } from "react";
 
 const projects = [
   {
+    id: 0,
+    title: "Anything but a Gun",
+    description: "Anything but a Gun is a 3D with billboarding Roguelite First Person Shooter. I lead the software engineering team in developing this project.",
+    image: "/projects/project0.png",
+    tags: ["Unity", "C#", "Game Development"],
+    projectPage: "/ABAG",
+    demoUrl: "##",
+    githubUrl: "https://github.com/RangerHalt2/Anything-But-A-Gun",
+  },
+  {
     id: 1,
     title: "ThermoFlux",
     description:
@@ -53,7 +63,14 @@ export const ProjectsSection = () => {
         "The Organization Repository is Private, However I am at Liberty to Share My Work on a Request"
       );
       setShowPopup(true);
-    } else {
+    } else if (target.getAttribute("href") === "##") {
+      e.preventDefault();
+      setPopupMessage(
+        "The Demo for this project is currently unavailable, a steam page is coming soon. I can share a demo build on request, just reach out to me on LinkedIn or Discord or Email."
+      );
+      setShowPopup(true);
+    } 
+    else {
       setShowPopup(false);
     }
   };
@@ -120,7 +137,7 @@ export const ProjectsSection = () => {
                   {project.description}
                 </p>
                 <div className="flex flex-col justify-between items-center">
-                  <div className="flex space-x-3">
+                  <div onClick={handleClick} className="flex space-x-3">
                     <a
                       href={project.demoUrl}
                       target="_blank"

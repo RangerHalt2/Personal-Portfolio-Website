@@ -26,7 +26,7 @@ export const ThermoFluxSection = () => {
               the game.
             </p>
             <p className="text-muted-foreground text-left mt-3 p-6">
-              I worked on my strenghts as a Software Engineer here writing code
+              I worked on my strengths as a Software Engineer here writing code
               for core mechanics, physics, and UI elements in C#. I also
               strengthened my understanding of Unity and it's core systems.
               Finally, my understanding of Game Development strengthened much
