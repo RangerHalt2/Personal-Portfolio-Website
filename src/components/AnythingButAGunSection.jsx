@@ -1,10 +1,11 @@
 import { ExternalLinkIcon, Github, X } from "lucide-react";
 import { useState } from "react";
-//import { Steam } from "@phosphor-icons/react";
+import { FaSteam } from "react-icons/fa";
+import { FaItchIo } from "react-icons/fa";
 
 
 export const AnythingButAGunSection = () => {
-    const [showPopup, setShowPopup] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
   const [popUpMessage, setPopupMessage] = useState(
     "This Organization's Repositories are private, but I can share my code on request"
   );
@@ -22,9 +23,9 @@ export const AnythingButAGunSection = () => {
       setShowPopup(false);
     }
   };
-    return (
+  return (
     <section id="hero">
-        {showPopup && (
+      {showPopup && (
         <div className="fixed inset-0 flex items-center justify-center bg-primary/50 z-50">
           <div className="bg-card p-6 rounded-lg shadow-lg max-w-sm w-full relative">
             <button
@@ -38,15 +39,15 @@ export const AnythingButAGunSection = () => {
         </div>
       )}
       <div className="relative min-h-screen flex flex-col items-center h-full">
-        <h1 className="text-primary mt-35 text-4xl md:text-5xl font-bold">
+        <h1 className="text-primary mt-25 text-4xl md:text-5xl font-bold">
           Anything but a Gun
         </h1>
-        <div className="grid grid-cols-1 items-center md:grid-cols-2">
-          <div className="flex justify-center">
+        <div className="grid grid-cols-1 items-start mt-10 md:grid-cols-[auto_1fr] md:gap-10">
+          <div className="flex">
             <img
-              src="/projects/project0.png"
+              src="/projects/project0-1.png"
               alt="Anything but a Gun Banner and Logo"
-              className="w-75 h-50 md:w-275 md:h-175 md:ml-6 mt-6 items-center"
+              className="w-75 h-50 md:w-135 md:ml-15 md:h-175 mt-6"
             />
           </div>
           <div className="mt-6 md:mt-0">
@@ -54,42 +55,29 @@ export const AnythingButAGunSection = () => {
               Role: <span className="text-primary">Lead Software Engineer</span>
             </h2>
             <p className="text-muted-foreground text-left mt-3 p-6">
-              I lead the development of the software engineering team for our project 
-              Anything but a Gun. A 3D with billboarding Rogutelite First Person Shooter 
-              game where the player rebels against an AI takeover of their office building. 
-              Finding and using creativity to create unlikely weapons - Anything but a Gun!
+              I lead the Software Engineering team of 4 in the development of this project Anything But A Gun. A rogue-like fast-paced first person shooter where the player rebels against an AI takeover of their office building. A player can expect to find many different unlikely and unique weapons with strange upgrades throughout the run of the game. There's only one rule: it's Anything But A Gun.
             </p>
             <p className="text-muted-foreground text-left mt-3 p-6">
-              I worked on my leadership skills focusing on leading the software engineer team 
-              and collaborating with the art and design teams. I developed my skills in C# and 
-              Unity engine as well as my core understanding of Game Development.
+              I worked heavily in C# in the Unity engine developing and designing software. I Lead the team with tools like Clickup to delegate and manage workloads for the entire team. Collaborated with the art and design teams to connect art to code and bring our vision to life. Additionally, I handled and directed back-end documentation on the TDD and assisted designers in the GDD.
             </p>
             <h3 className="font-semibold text-3xl mt-6">
               View My <span className="text-primary">Work</span>
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-5 md:items-left">
-              <div className="grid grid-cols-2 place-items-center w-auto h-auto md:items-left md:w-35 md:h-35 ml-6 mt-6">
-                <a
-                  href="https://github.com/RangerHalt2/Anything-But-A-Gun"
-                  target="_blank"
-                >
-                  <Github size={50} className="text-primary" />
-                </a>
-                <div onClick={handleClick}>
-                    <a href="#" target="_blank">
-                    <ExternalLinkIcon size={50} className="text-primary" />
+            <div className="mt-6">
+              <div className="inline-block relative">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0PVmMslREDc?si=2CAWFmj5yDVMpTDr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div className="justify-center flex gap-4 p-2">
+                  <a href="https://github.com/RangerHalt2/Anything-But-A-Gun" target="_blank">
+                    <Github size={50} className="text-primary" />
+                  </a>
+                  <div onClick={handleClick}>
+                    <a href="https://store.steampowered.com/app/4413900/Anything_But_A_Gun/" target="_blank">
+                      <FaSteam size={50} className="text-primary" />
                     </a>
-                </div>
-              </div>
-              <div className="mt-6 items-left col-span-4 p-6 md:p-0">
-                <div className="pb-[56.25%] h-120 md:h-0 overflow-hidden ">
-                  <iframe
-                    className="relative flex w-90 h-120 md:w-150 md:h-110"
-                    src="https://www.youtube.com/embed/QU_LxIi8HjU?si=xr65UE6PlastP1Hm"
-                    title="ThermoFlux Gameplay Trailer"
-                    allow="accelerometer; autoplay; clipboard-write; encrytped-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
+                  </div>
+                  <a href="https://himey.itch.io/anything-but-a-gun" target="_blank">
+                    <FaItchIo size={50} className="text-primary" />
+                  </a>
                 </div>
               </div>
             </div>

@@ -1,5 +1,6 @@
 import { ArrowRight, ExternalLinkIcon, Github, X } from "lucide-react";
 import { useState } from "react";
+import { FaSteam, FaItchIo } from "react-icons/fa";
 
 const projects = [
   {
@@ -11,6 +12,8 @@ const projects = [
     projectPage: "/ABAG",
     demoUrl: "##",
     githubUrl: "https://github.com/RangerHalt2/Anything-But-A-Gun",
+    externals: ["Steam", "Itch.io"],
+    externalUrls: ["https://store.steampowered.com/app/4413900/Anything_But_A_Gun/", "https://himey.itch.io/anything-but-a-gun"],
   },
   {
     id: 1,
@@ -22,6 +25,8 @@ const projects = [
     projectPage: "/ThermoFlux",
     demoUrl: "https://rangerhalt.itch.io/thermoflux",
     githubUrl: "https://github.com/RangerHalt2/ThermoFlux",
+    externals: ["Itch.io"],
+    externalUrls: ["https://rangerhalt.itch.io/thermoflux"],
   },
   {
     id: 2,
@@ -33,6 +38,8 @@ const projects = [
     projectPage: "/ZeroS",
     demoUrl: "https://www.technicpack.net/modpack/dragon-block-zero-s",
     githubUrl: "#",
+    externals: ["Other"],
+    externalUrls: ["https://www.technicpack.net/modpack/dragon-block-zero-s"],
   },
   {
     id: 3,
@@ -44,6 +51,8 @@ const projects = [
     projectPage: "/Portfolio",
     demoUrl: "#",
     githubUrl: "/",
+    externals: ["Other"],
+    externalUrls: ["#"],
   },
 ];
 
@@ -69,11 +78,11 @@ export const ProjectsSection = () => {
         "The Demo for this project is currently unavailable, a steam page is coming soon. I can share a demo build on request, just reach out to me on LinkedIn or Discord or Email."
       );
       setShowPopup(true);
-    } 
-    else {
+    } else {
       setShowPopup(false);
     }
   };
+
   return (
     <section id="projects" className="py-24 px-4 relative">
       {showPopup && (
@@ -119,7 +128,10 @@ export const ProjectsSection = () => {
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag) => (
-                    <span className="px-2 py-1 text-xs font-medium rounded-full bg-secondary text-secondary-foreground">
+                    <span
+                      key={tag}
+                      className="px-2 py-1 text-xs font-medium rounded-full bg-secondary text-secondary-foreground"
+                    >
                       {tag}
                     </span>
                   ))}
@@ -129,8 +141,7 @@ export const ProjectsSection = () => {
                   className="text-primary card-hover hover:text-primary-foreground underline"
                 >
                   <h3 className="text-xl font-semibold mb-1">
-                    {" "}
-                    {project.title}{" "}
+                    {project.title}
                   </h3>
                 </a>
                 <p className="text-muted-foreground text-sm mb-4">
@@ -138,22 +149,34 @@ export const ProjectsSection = () => {
                 </p>
                 <div className="flex flex-col justify-between items-center">
                   <div onClick={handleClick} className="flex space-x-3">
+                    {project.externals?.map((platform, index) => {
+                      const url = project.externalUrls?.[index];
+                      if (!url) return null;
+
+                      const icon = {
+                        Steam: <FaSteam size={20} />,
+                        "Itch.io": <FaItchIo size={20} />,
+                        Other: <ExternalLinkIcon size={20} />,
+                      }[platform];
+
+                      return (
+                        <a
+                          key={platform}
+                          href={url}
+                          target="_blank"
+                          className="text-foreground/80 hover:text-primary transition-colors duration-300 mt-auto"
+                        >
+                          {icon}
+                        </a>
+                      );
+                    })}
                     <a
-                      href={project.demoUrl}
+                      href={project.githubUrl}
                       target="_blank"
                       className="text-foreground/80 hover:text-primary transition-colors duration-300 mt-auto"
                     >
-                      <ExternalLinkIcon size={20} />
+                      <Github size={20} />
                     </a>
-                    <div onClick={handleClick}>
-                      <a
-                        href={project.githubUrl}
-                        target="_blank"
-                        className="text-foreground/80 hover:text-primary transition-colors duration-300 mt-auto"
-                      >
-                        <Github size={20} />
-                      </a>
-                    </div>
                   </div>
                 </div>
               </div>
