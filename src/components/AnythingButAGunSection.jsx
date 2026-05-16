@@ -65,7 +65,7 @@ export const AnythingButAGunSection = () => {
             </h3>
             <div className="mt-6">
               <div className="inline-block relative">
-                <iframe md:width="560" md:height="315" src="https://www.youtube.com/embed/0PVmMslREDc?si=2CAWFmj5yDVMpTDr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe className="relative flex w-90 h-120 md:w-150 md:h-85" src="https://www.youtube.com/embed/0PVmMslREDc?si=2CAWFmj5yDVMpTDr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <div className="justify-center flex gap-4 p-2">
                   <a href="https://github.com/RangerHalt2/Anything-But-A-Gun" target="_blank">
                     <Github size={50} className="text-primary" />
