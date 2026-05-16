@@ -47,7 +47,7 @@ export const AnythingButAGunSection = () => {
             <img
               src="/projects/project0-1.png"
               alt="Anything but a Gun Banner and Logo"
-              className="w-75 h-50 md:w-135 md:ml-15 md:h-175 mt-6"
+              className="w-auto h-auto md:w-135 md:ml-15 md:h-175 md:mt-6"
             />
           </div>
           <div className="mt-6 md:mt-0">
@@ -65,7 +65,7 @@ export const AnythingButAGunSection = () => {
             </h3>
             <div className="mt-6">
               <div className="inline-block relative">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/0PVmMslREDc?si=2CAWFmj5yDVMpTDr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe md:width="560" md:height="315" src="https://www.youtube.com/embed/0PVmMslREDc?si=2CAWFmj5yDVMpTDr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <div className="justify-center flex gap-4 p-2">
                   <a href="https://github.com/RangerHalt2/Anything-But-A-Gun" target="_blank">
                     <Github size={50} className="text-primary" />
